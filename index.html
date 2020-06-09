@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container vh-100">
+    <div class="row content-parent justify-content-center align-items-center">
+        <div class="col-md-8">
+            <div class="col-md-8 m-auto">
+                <div class="card willFlip" id="willFlip">
+                    <div class="front">
+                        <div class="card-body">
+                            <div class="div">
+                                <img src="./assets/maestro.png" width="70" height="50" alt="">
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="cardNumber">Card Number</label>
+                                    <input type="text" class="form-control" disabled readonly id="cardNumber">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="col-md-6 float-left">
+                                    Card Holder
+                                </div>
+                                <div class="col-md-4 mr-0">
+                                    Expires
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-body">
+                            <div class="col-md-12  back-middle">
+                                <div class="form-group">
+                                    <label for="cardCcv">Card Number</label>
+                                    <input type="text" class="form-control" id="cardCcv">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body mt-5">
+                    <div class="form-group">
+                        <label for="cardInput">Cards Number</label>
+                        <input class="input card-input_field form-control" id="cardInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="cardHolder">Cards Holders</label>
+                        <input class="card-input_field form-control" id="cardHolder">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="monthInput">Expiration Date</label>
+                                <select name="" class="form-control card-input_field" id="monthInput">
+                                    <option></option>
+                                    <option class="disabled" disabled>Month</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="yearInput"></label>
+                                <select name="" class="form-control card-input_field mt-2" id="yearInput">
+                                    <option></option>
+                                    <option class="disabled" disabled>Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="cwInput">CW</label>
+                                <input type="text" class="form-control card-input_field" id="cwInput">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn btn-primary d-block card-input_button w-100">SUBMIT</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/flipper.min.js" type="text/javascript"></script>
+<script src="./assets/main.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+##< nodes/modules <##
+/node_modules
+##> nodes/modules >##
+
+##< ide/* <##
+/.idea
+##> ide/* >##
