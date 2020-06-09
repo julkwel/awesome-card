@@ -9,7 +9,7 @@ const action = {
         for (let i = 1; i <= 12; i++) {
             html += '<option value="' + i + '">' + i + '</ooption>'
         }
-        $('#monthInput').append(html)
+        $('#monthInput').append(html);
 
         return action;
     },
@@ -23,7 +23,7 @@ const action = {
             let yearVal = currentYear + i;
             html += '<option value="' + yearVal + '">' + yearVal + '</ooption>'
         }
-        $('#yearInput').append(html)
+        $('#yearInput').append(html);
 
         return action;
     },
