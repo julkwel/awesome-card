@@ -3,6 +3,7 @@ $(document).ready(function () {
 });
 
 const action = {
+    // update month options on month select
     updateMonth: () => {
         let html = '';
         for (let i = 1; i <= 12; i++) {
@@ -13,6 +14,7 @@ const action = {
         return action;
     },
 
+    // update year option on year select
     updateYear: () => {
         let year = new Date();
         let currentYear = year.getFullYear();
@@ -26,6 +28,7 @@ const action = {
         return action;
     },
 
+    // flip card action
     flipCard: () => {
         let cardToFlip = $("#willFlip");
         let inputCw = $('#cwInput');
