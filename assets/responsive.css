@@ -1,0 +1,49 @@
+@media screen and (max-width: 1200px) and (min-width: 750px){
+    .col-md-6 {
+        -ms-flex: 0 0 79%;
+        flex: 0 0 79%;
+        max-width: 79%;
+    }
+
+    #cardNumber {
+        font-size: 38px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 748px){
+    .content-date-input{
+        position: relative;
+        right: -38px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #cardNumber{
+        font-size: 25px;
+    }
+
+    .front input{
+        background-color: transparent!important;
+        color: white;
+        font-size: 18px;
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .front input::placeholder{
+        color: white;
+        font-size: 18px;
+    }
+    .slash-text{
+        padding: 0px!important;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .content-date-input{
+        right: -23px;
+    }
+}

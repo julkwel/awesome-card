@@ -29,6 +29,7 @@ body {
 .card-input_button {
     font-size: 30px;
     padding: 5px 15px;
+    box-shadow: 3px 10px 20px 0px rgb(73, 135, 228);
 }
 
 .willFlip {
@@ -45,15 +46,17 @@ body {
 .front{
     background-color: #000521;
     border-radius: 5px;
+    box-shadow: 3px 10px 20px 0px rgb(73, 79, 111);
 }
 
 .back{
     background-color: #000521;
     border-radius: 5px;
+    box-shadow: 3px 10px 20px 0px rgb(73, 79, 111);
 }
 
 .back-middle {
-    margin-top: 5rem;
+    margin-top: .5rem;
 }
 
 .content-parent {
@@ -85,7 +88,7 @@ body {
 }
 
 #cardNumber{
-    font-size: 42px;
+    font-size: 39px;
     text-align: center;
     letter-spacing: 1px;
 }
@@ -106,43 +109,12 @@ body {
     text-overflow: ellipsis;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 750px){
-    .col-md-6 {
-        -ms-flex: 0 0 79%;
-        flex: 0 0 79%;
-        max-width: 79%;
-    }
-
-    #cardNumber {
-        font-size: 38px;
-        text-align: center;
-        letter-spacing: 1px;
-    }
+.card-bar{
+    margin-top: 10%;
+    background: #ffffff52;
+    height: 40px;
 }
 
-@media screen and (max-width: 500px){
-    #cardNumber{
-        font-size: 25px;
-    }
-
-    .front input{
-        background-color: transparent!important;
-        color: white;
-        font-size: 18px;
-        border: none;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .front input::placeholder{
-        color: white;
-        font-size: 18px;
-    }
-    .slash-text{
-        padding: 0px!important;
-    }
-
-    .content-date-input{
-        right: 0px;
-    }
+.back .card-body{
+    padding: 0;
 }
