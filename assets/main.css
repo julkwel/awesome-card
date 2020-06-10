@@ -61,11 +61,24 @@ body {
 
 .content-right{
     position: relative;
-    right: -45px;
+    /*right: -45px;*/
 }
 
 #cardCcv{
     text-align: right;
     font-size: 18px;
     font-weight: bold;
+}
+
+.front input{
+    background-color: transparent!important;
+    color: white;
+    font-size: 23px;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#expiredMonth{
+    text-align: right;
 }
