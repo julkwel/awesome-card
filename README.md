@@ -7,4 +7,4 @@ Inspired from :
 ![https://github.com/julkwel/TzWcc3FrontChallenge/blob/master/assets/scree_shot.png?raw=true](https://github.com/julkwel/TzWcc3FrontChallenge/blob/master/assets/scree_shot.png?raw=true)
 
 
-*Create cool things, code for fun !!! *
+*Create cool things, code for fun !!!*
