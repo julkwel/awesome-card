@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    action.updateMonth().updateYear().flipCard();
+    action.updateMonth().updateYear().flipCard().maskInput();
 });
 
 const action = {
@@ -46,6 +46,13 @@ const action = {
         inputCw.on('click', function () {
             cardToFlip.flip(true);
         });
+
+        return action;
+    },
+
+    maskInput: () => {
+        let cardInput = $('#cardInput');
+        cardInput.inputmask('#### #### ####');
 
         return action;
     }

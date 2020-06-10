@@ -34,16 +34,27 @@ body {
     position: relative;
     top: 58px;
     z-index: 99999;
-    background-image: url("card_23.jpeg");
+    /*background-image: url("card_23.jpeg");*/
     box-shadow: 0 20px 60px 0 rgba(14, 42, 90, 0.55);
     color: white;
     font-weight: bold;
+    border: none;
 }
 
+.front{
+    background-color: #000521;
+}
+.back{
+    background-color: #000521;
+}
 .back-middle {
     margin-top: 5rem;
 }
 
 .content-parent {
     height: 80vh;
+}
+
+input:focus{
+    text-underline: none;
 }
