@@ -86,7 +86,7 @@ const action = {
         });
 
         expiredYear.inputmask({
-            mask: '9999',
+            mask: '99',
             placeholder: 'YY',
             clearMaskOnLostFocus: false
         });
@@ -105,7 +105,7 @@ const action = {
         });
 
         yearInput.bind('change', function () {
-            expiredYear.val($(this).val());
+            expiredYear.val(parseInt($(this).val().toString().slice(-2)));
         });
 
         monthInput.bind('change', function () {
