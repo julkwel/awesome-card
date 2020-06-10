@@ -58,3 +58,14 @@ body {
 .content-parent {
     height: 80vh;
 }
+
+.content-right{
+    position: relative;
+    right: -45px;
+}
+
+#cardCcv{
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+}
