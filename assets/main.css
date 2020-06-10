@@ -58,7 +58,3 @@ body {
 .content-parent {
     height: 80vh;
 }
-
-input:focus{
-    text-underline: none;
-}

@@ -35,7 +35,7 @@ const action = {
 
         cardToFlip.flip({
             trigger: 'manual',
-            speed:500
+            speed: 500
         });
 
         $(document).on('click', function (e) {
@@ -53,7 +53,23 @@ const action = {
 
     maskInput: () => {
         let cardInput = $('#cardInput');
-        cardInput.inputmask('#### #### ####');
+        let cardNumber = $('#cardNumber');
+
+        cardNumber.inputmask({
+            mask: '9999 9999 9999 9999',
+            regex: "\\d*",
+            placeholder: '#',
+            clearMaskOnLostFocus: false
+        });
+        cardInput.inputmask({
+            mask: '9999 9999 9999 9999',
+            regex: "\\d*",
+            placeholder: ''
+        });
+
+        cardInput.bind("keyup paste", function () {
+            cardNumber.val($(this).val());
+        });
 
         return action;
     }
