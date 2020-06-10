@@ -1,3 +1,9 @@
+/**
+ * @Author Julkwel <julienrajerison5@gmail.com>
+ *
+ * Created 09 - 06 - 2020
+ */
+
 $(document).ready(function () {
     action.updateMonth().updateYear().flipCard().maskInput();
 });
