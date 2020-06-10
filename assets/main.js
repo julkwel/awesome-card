@@ -34,7 +34,8 @@ const action = {
         let inputCw = $('#cwInput');
 
         cardToFlip.flip({
-            trigger: 'manual'
+            trigger: 'manual',
+            speed:500
         });
 
         $(document).on('click', function (e) {

@@ -34,19 +34,23 @@ body {
     position: relative;
     top: 58px;
     z-index: 99999;
-    /*background-image: url("card_23.jpeg");*/
     box-shadow: 0 20px 60px 0 rgba(14, 42, 90, 0.55);
     color: white;
     font-weight: bold;
+    background-color: transparent;
     border: none;
 }
 
 .front{
     background-color: #000521;
+    border-radius: 5px;
 }
+
 .back{
     background-color: #000521;
+    border-radius: 5px;
 }
+
 .back-middle {
     margin-top: 5rem;
 }
