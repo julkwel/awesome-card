@@ -4,8 +4,7 @@ Challenge awesome card with interactive input | [![Netlify Status](https://api.n
 Inspired from :
 [muhammederdem/vue-interactive-paycard](https://github.com/muhammederdem/vue-interactive-paycard)
 
-Open :
+![https://github.com/julkwel/TzWcc3FrontChallenge/blob/master/assets/scree_shot.png?raw=true](https://github.com/julkwel/TzWcc3FrontChallenge/blob/master/assets/scree_shot.png?raw=true)
 
-`index.html`
 
-*Create cool things, code for fun*
+*Create cool things, code for fun !!! *
