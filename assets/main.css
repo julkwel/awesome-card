@@ -121,4 +121,11 @@ body {
 
 .bd-highlight{
     margin-top: -15px;
+    height: 85px;
+}
+
+.github-link{
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
