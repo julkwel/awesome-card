@@ -18,8 +18,8 @@ Created 09 - 06 - 2020
 <body>
 <div class="container vh-100">
     <div class="row content-parent justify-content-center align-items-center">
-        <div class="col-md-8">
-            <div class="col-md-8 m-auto">
+        <div class="col-md-6">
+            <div class="col-md-10 m-auto">
                 <div class="card willFlip" id="willFlip">
                     <div class="front">
                         <div class="card-body">
@@ -70,17 +70,17 @@ Created 09 - 06 - 2020
                 <div class="card-body mt-5">
                     <div class="form-group">
                         <label for="cardInput">Cards Number</label>
-                        <input class="input card-input_field form-control" id="cardInput">
+                        <input required class="input card-input_field form-control" id="cardInput">
                     </div>
                     <div class="form-group">
                         <label for="cardHolder">Cards Holders</label>
-                        <input class="card-input_field form-control" id="cardHolder">
+                        <input required class="card-input_field form-control" id="cardHolder">
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="monthInput">Expiration Date</label>
-                                <select name="" class="form-control card-input_field" id="monthInput">
+                                <select required name="" class="form-control card-input_field" id="monthInput">
                                     <option class="disabled" readonly>Month</option>
                                 </select>
                             </div>
@@ -88,7 +88,7 @@ Created 09 - 06 - 2020
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="yearInput"></label>
-                                <select name="" class="form-control card-input_field mt-2" id="yearInput">
+                                <select required name="" class="form-control card-input_field mt-2" id="yearInput">
                                     <option class="disabled" readonly>Year</option>
                                 </select>
                             </div>
@@ -96,7 +96,7 @@ Created 09 - 06 - 2020
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="cwInput">CW</label>
-                                <input type="text" class="form-control card-input_field" id="cwInput">
+                                <input required type="text" class="form-control card-input_field" id="cwInput">
                             </div>
                         </div>
                     </div>
