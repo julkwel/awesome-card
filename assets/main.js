@@ -154,11 +154,18 @@ const action = {
 
     // Handle input effect on focus in/out
     blurInput: (selector, drawBack) => {
-        selector.on('focusin', function () {
+        selector.on('focusin', function (e) {
+            if ($(e.target).is('#cardInput')) {
+                drawBack.addClass('inputFakeFont')
+            }
             drawBack.addClass('willActive');
         });
 
-        selector.on('focusout', function () {
+        selector.on('focusout', function (e) {
+            if ($(e.target).is('#cardInput')) {
+                drawBack.removeClass('inputFakeFont willActive')
+            }
+
             drawBack.removeClass('willActive');
         });
     }

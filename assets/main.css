@@ -129,3 +129,10 @@ body {
     right: 20px;
     top: 20px;
 }
+
+.inputFakeFont{
+    font-size: 37px!important;
+    transition: 0.3s;
+    filter: blur(50);
+    animation: bounce;
+}
