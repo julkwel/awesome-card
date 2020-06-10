@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
+
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
@@ -36,7 +38,6 @@ body {
     z-index: 99999;
     box-shadow: 0 20px 60px 0 rgba(14, 42, 90, 0.55);
     color: white;
-    font-weight: bold;
     background-color: transparent;
     border: none;
 }
@@ -59,11 +60,6 @@ body {
     height: 80vh;
 }
 
-.content-right{
-    position: relative;
-    /*right: -45px;*/
-}
-
 #cardCcv{
     text-align: right;
     font-size: 18px;
@@ -79,6 +75,21 @@ body {
     padding-right: 0;
 }
 
+.front input::placeholder{
+    color: white;
+    font-size: 23px;
+}
+
 #expiredMonth{
     text-align: right;
+}
+
+.expiredText{
+    padding-right: 1rem;
+}
+
+#cardNumber{
+    font-size: 42px;
+    text-align: center;
+    letter-spacing: 1px;
 }
