@@ -4,10 +4,6 @@ Challenge awesome card with interactive input
 Inspired from :
 [muhammederdem/vue-interactive-paycard](https://github.com/muhammederdem/vue-interactive-paycard)
 
-Install dependencies :
-
-`npm install`
-
 Open :
 
 `index.html`
