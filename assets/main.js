@@ -60,6 +60,7 @@ const action = {
         return action;
     },
 
+    // Input mask and input action on blur
     maskInput: () => {
         let cardInput = $('#cardInput');
         let cardNumber = $('#cardNumber');
@@ -71,6 +72,8 @@ const action = {
         let cardHolderInput = $('#cardHolder');
         let cwInput = $('#cwInput');
         let cardCcv = $('#cardCcv');
+        let cardHoldContent = $('.card-holder-content');
+        let cardExpiresContent = $('.card-expires-content');
 
         cardNumber.inputmask({
             mask: '9999 9999 9999 9999',
@@ -122,6 +125,41 @@ const action = {
             cardCcv.val($(this).val());
         });
 
+        let inputToBlur = [
+            {
+                selector: cardInput,
+                drawBack: cardNumber,
+            },
+            {
+                selector: cardHolderInput,
+                drawBack: cardHoldContent,
+            },
+            {
+                selector: monthInput,
+                drawBack: cardExpiresContent
+            },
+            {
+                selector: yearInput,
+                drawBack: cardExpiresContent
+            }
+        ];
+
+        inputToBlur.forEach(function (element) {
+            action.blurInput(element.selector, element.drawBack);
+        });
+
+
         return action;
+    },
+
+    // Handle input effect on focus in/out
+    blurInput: (selector, drawBack) => {
+        selector.on('focusin', function () {
+            drawBack.addClass('willActive');
+        });
+
+        selector.on('focusout', function () {
+            drawBack.removeClass('willActive');
+        });
     }
 };

@@ -84,12 +84,47 @@ body {
     text-align: right;
 }
 
-.expiredText{
-    padding-right: 1rem;
-}
-
 #cardNumber{
     font-size: 42px;
     text-align: center;
     letter-spacing: 1px;
+}
+
+.willActive{
+    border: solid 1px white!important;
+}
+
+#cardNumber{
+    height: 100%;
+}
+
+.content-date-input{
+    position: relative;
+}
+
+@media screen and (max-width: 500px){
+    #cardNumber{
+        font-size: 25px;
+    }
+
+    .front input{
+        background-color: transparent!important;
+        color: white;
+        font-size: 18px;
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .front input::placeholder{
+        color: white;
+        font-size: 18px;
+    }
+    .slash-text{
+        padding: 0px!important;
+    }
+
+    .content-date-input{
+        right: 0px;
+    }
 }
