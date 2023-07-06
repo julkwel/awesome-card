@@ -7,4 +7,8 @@ Inspired from :
 ![https://github.com/julkwel/TzWcc3FrontChallenge/blob/master/assets/scree_shot.png?raw=true](https://github.com/julkwel/TzWcc3FrontChallenge/blob/master/assets/scree_shot.png?raw=true)
 
 
+## SOMEONE USE THIS CODE FOR SCAMMING be careful !!!
+
+Be aware of this website :  [cppcncl.com](https://cppcncl.com) !!!
+
 *Create cool things, code for fun !!!*
